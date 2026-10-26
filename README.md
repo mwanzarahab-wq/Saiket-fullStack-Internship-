@@ -2,8 +2,8 @@
 
 My work for the **Full Stack Development Internship Program** at [SaiKet Systems](https://www.saiket.in). This repository holds all six tasks, each in its own folder, progressing from a static website to a complete full stack application.
 
-> **Intern:** [Your Name] · **Duration:** [Start Date] – [End Date]
-> **LinkedIn:** [your-profile-url] · **Demo video:** [linkedin-post-url]
+> **Intern:** [Rahab Mwanza] · **Duration:** [23-10-2026] – [23-11-2026]
+> **LinkedIn:** [your-profile-url] 
 
 ---
 
