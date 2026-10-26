@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Rahab Mwanza, Software Engineering student and web developer in Lusaka, Zambia.">
+  <title>Rahab Mwanza | Portfolio</title>
+
+  <!-- Apply the saved theme before the page paints, so there is no flash -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("portfolio-theme");
+        var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.setAttribute("data-bs-theme", saved || (prefersDark ? "dark" : "light"));
+      } catch (e) { /* storage blocked: keep the default light theme */ }
+    })();
+  </script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="90" tabindex="0">
+
+  <!-- Navigation -->
+  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Rahab<span class="brand-dot">.</span></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks"
+              aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navLinks">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <button id="themeToggle" class="btn btn-ghost btn-sm" type="button" aria-pressed="false">Dark mode</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Home -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="row align-items-center gy-5 gx-lg-5">
+          <div class="col-lg-7 order-2 order-lg-1">
+            <p class="eyebrow">Software Engineering student &middot; Lusaka, Zambia</p>
+            <h1>Hi, I'm Rahab Mwanza.</h1>
+            <p class="lead-text">I build fast, responsive websites and school management systems through RJM Web Technologies, and I'm growing into a full stack developer.</p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a href="#projects" class="btn btn-accent btn-lg">View my projects</a>
+              <a href="#contact" class="btn btn-ghost btn-lg">Contact me</a>
+            </div>
+          </div>
+
+          <div class="col-lg-5 order-1 order-lg-2 d-flex justify-content-center">
+            <div class="monogram" role="img" aria-label="Monogram with the initials RM">RM</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section section-alt">
+      <div class="container">
+        <p class="eyebrow">About</p>
+        <h2>A little about me</h2>
+
+        <div class="row gy-5 gx-lg-5 mt-1">
+          <div class="col-lg-7">
+            <p>I'm a Software Engineering student at the University of Zambia (UNZA), based in Lusaka. I run RJM Web Technologies, where I build custom websites and school management systems for clients.</p>
+            <p>I enjoy turning ideas into clean, responsive interfaces that work well on any screen. Right now I'm extending my skills from the front end into servers and databases.</p>
+
+            <h3 class="h6 mt-4 mb-3">Skills</h3>
+            <ul class="skills list-unstyled">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Bootstrap</li>
+              <li>Responsive design</li>
+              <li>Git &amp; GitHub</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="info-card">
+              <span class="info-label">Studying</span>
+              <span class="info-value">Software Engineering, UNZA</span>
+            </div>
+            <div class="info-card">
+              <span class="info-label">Business</span>
+              <span class="info-value">RJM Web Technologies</span>
+            </div>
+            <div class="info-card">
+              <span class="info-label">Based in</span>
+              <span class="info-value">Lusaka, Zambia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects (placeholders) -->
+    <section id="projects" class="section">
+      <div class="container">
+        <p class="eyebrow">Projects</p>
+        <h2>Selected work</h2>
+        <p class="section-note">These are placeholder cards. Real project details are coming soon.</p>
+
+        <div class="row g-4 mt-1">
+
+          <div class="col-md-6 col-lg-4">
+            <article class="card project-card h-100">
+              <div class="project-thumb thumb-1"><span>Preview coming soon</span></div>
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5">Project One</h3>
+                <p class="text-muted-custom">A short description of what this project does and the problem it solves.</p>
+                <ul class="tags list-unstyled">
+                  <li>HTML</li><li>CSS</li><li>JavaScript</li>
+                </ul>
+                <div class="mt-auto d-flex gap-2">
+                  <a href="#projects" class="btn btn-accent btn-sm disabled" aria-disabled="true" tabindex="-1">Live demo</a>
+                  <a href="#projects" class="btn btn-ghost btn-sm disabled" aria-disabled="true" tabindex="-1">Source code</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <article class="card project-card h-100">
+              <div class="project-thumb thumb-2"><span>Preview coming soon</span></div>
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5">Project Two</h3>
+                <p class="text-muted-custom">A short description of what this project does and the problem it solves.</p>
+                <ul class="tags list-unstyled">
+                  <li>Bootstrap</li><li>JavaScript</li>
+                </ul>
+                <div class="mt-auto d-flex gap-2">
+                  <a href="#projects" class="btn btn-accent btn-sm disabled" aria-disabled="true" tabindex="-1">Live demo</a>
+                  <a href="#projects" class="btn btn-ghost btn-sm disabled" aria-disabled="true" tabindex="-1">Source code</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <article class="card project-card h-100">
+              <div class="project-thumb thumb-3"><span>Preview coming soon</span></div>
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5">Project Three</h3>
+                <p class="text-muted-custom">A short description of what this project does and the problem it solves.</p>
+                <ul class="tags list-unstyled">
+                  <li>HTML</li><li>CSS</li>
+                </ul>
+                <div class="mt-auto d-flex gap-2">
+                  <a href="#projects" class="btn btn-accent btn-sm disabled" aria-disabled="true" tabindex="-1">Live demo</a>
+                  <a href="#projects" class="btn btn-ghost btn-sm disabled" aria-disabled="true" tabindex="-1">Source code</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's work together</h2>
+
+        <div class="row gy-5 gx-lg-5 mt-1">
+          <div class="col-lg-7">
+            <div id="formSuccess" class="alert alert-success" role="status" hidden></div>
+
+            <form id="contactForm" novalidate>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" autocomplete="name" placeholder="Your full name">
+                <div class="invalid-feedback"></div>
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" autocomplete="email" placeholder="you@example.com">
+                <div class="invalid-feedback"></div>
+              </div>
+
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="subject" name="subject" placeholder="What is this about?">
+                <div class="invalid-feedback"></div>
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="5" maxlength="500" placeholder="Write your message here"></textarea>
+                <div class="invalid-feedback"></div>
+                <div class="form-text text-end"><span id="messageCount">0</span>/500</div>
+              </div>
+
+              <button type="submit" class="btn btn-accent btn-lg">Send message</button>
+            </form>
+          </div>
+
+          <div class="col-lg-5">
+            <h3 class="h6 mb-3">Other ways to reach me</h3>
+            <a class="contact-link" href="mailto:mwanza.rahab@cs.unza.zm">
+              <span class="info-label">Email</span>
+              <span class="info-value">mwanza.rahab@cs.unza.zm</span>
+            </a>
+            <a class="contact-link" href="https://github.com/mwanzarahab-wq" target="_blank" rel="noopener">
+              <span class="info-label">GitHub</span>
+              <span class="info-value">github.com/mwanzarahab-wq</span>
+            </a>
+            <a class="contact-link" href="https://linkedin.com/in/rahab-juvenalis-mwanza-543311261" target="_blank" rel="noopener">
+              <span class="info-label">LinkedIn</span>
+              <span class="info-value">Rahab Mwanza</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Rahab Mwanza &middot; Built with HTML, CSS, Bootstrap and JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
